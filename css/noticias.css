@@ -1,0 +1,111 @@
+/* Reset de estilos básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores del Atlético Bucaramanga */
+:root {
+    --color-primary: #FCEE3F; /* Amarillo primario */
+    --color-secondary: #31601E; /* Verde secundario */
+    --color-bg: #f0f0f0; /* Color de fondo */
+    --color-text: #333; /* Color de texto principal */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+section {
+    background-color: var(--color-bg);
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-primary); /* Utilizando el color primario para el título */
+}
+
+.noticia {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-secondary); /* Línea divisoria entre noticias */
+    padding-bottom: 20px;
+}
+
+.noticia h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
